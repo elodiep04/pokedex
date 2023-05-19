@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.appContainer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 185, 183, 1) 13%,
+    rgba(16, 187, 154, 0.06486344537815125) 88%,
+    rgba(218, 237, 241, 1) 100%
+  );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.appLogo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.appLogo img {
+  width: 300px;
+  height: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.appSearchBar {
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.appSearchBar input {
+  width: 45vw;
+  height: 3vh;
+  padding: 0 10px;
+  border: none;
+  border: solid 1px black;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .modalContainer {
+    width: 50vw;
+    height: 80vh;
   }
-  to {
-    transform: rotate(360deg);
+  .modalTypes {
+    flex-direction: column;
   }
 }
